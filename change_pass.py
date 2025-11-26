@@ -21,21 +21,21 @@ def execute_query_on_dsn(config):
         POSNAME,
         EMPPOSITION
         FROM employee
-        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1;
+        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1
         """
         connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
 
         with pyodbc.connect(connection_string) as conn:
             with closing(conn.cursor()) as cursor:
                 cursor.execute(sql_query)
-                columns = [column[0] for column in cursor.description]
                 rows = cursor.fetchall()
                 return {
                     "dsn": config['dsn'],
-                    "columns": columns,
+                    "columns": [],
                     "data": rows,
                     "error": None
                 }
+            
     except pyodbc.Error as e:
         return {
             "dsn": config['dsn'],
@@ -48,19 +48,19 @@ def execute_query_on_dsn(config):
 def change_password_cashier(newpass,idEmploye,config):
     try:
 
-        sql_query = """UPDATE employee
+        sql_query = """ UPDATE employee
                        SET SWIPE = ?
-                       WHERE ISACTIVE = 1 and EMPNUM = ? and EMPPOSITION = 1005;"""
+                       WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1005 """
         connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
 
         with pyodbc.connect(connection_string) as conn:
             with closing(conn.cursor()) as cursor:
                 cursor.execute(sql_query,(newpass,idEmploye))
-                columns = [column[0] for column in cursor.description]
+                # columns = [column[0] for column in cursor.description]
                 rows = cursor.fetchall()
                 return {
                     "dsn": config['dsn'],
-                    "columns": columns,
+                    "columns": [],
                     "data": rows,
                     "error": None
                 }
