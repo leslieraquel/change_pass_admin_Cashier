@@ -8,68 +8,68 @@ from email.mime.multipart import MIMEMultipart  # Para mensajes con HTML y/o adj
 connection_strings = [
 
     #JEFE ZONAL SILVANA CURAY   
-    # {"dsn": "conexion-pixel-quisur", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"quisur"},
-    # {"dsn": "conexion-pixel-rpatio", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rpatio"},
-    # {"dsn": "conexion-pixel-recreotres", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"recreotres"},
-    # {"dsn": "conexion-pixel-rplaza", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rplaza"},
-    # {"dsn": "conexion-pixel-sanluis", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"sanluis"},
-    # {"dsn": "conexion-pixel-sanrafael", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"sanrafael"},
-    # {"dsn": "conexion-pixel-villaflora", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"villaflora"},
+    {"dsn": "conexion-pixel-quisur", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"quisur"},
+    {"dsn": "conexion-pixel-rpatio", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rpatio"},
+    {"dsn": "conexion-pixel-recreotres", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"recreotres"},
+    {"dsn": "conexion-pixel-rplaza", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rplaza"},
+    {"dsn": "conexion-pixel-sanluis", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"sanluis"},
+    {"dsn": "conexion-pixel-sanrafael", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"sanrafael"},
+    {"dsn": "conexion-pixel-villaflora", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"villaflora"},
     
     # JEFE ZONAL JAVIER QUICHIMBO
-    # {"dsn": "conexion-pixel-bosque", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"bosque"},
-    # {"dsn": "conexion-pixel-cci", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"cci"},
-    # {"dsn": "conexion-pixel-colon", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"colon"},
-    # {"dsn": "conexion-pixel-jardin", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"jardin"},
-    # {"dsn": "conexion-pixel-quicentro", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"quicentro"},
-    # {"dsn": "conexion-pixel-riocentroquito", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"riocentroquito"},
+    {"dsn": "conexion-pixel-bosque", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"bosque"},
+    {"dsn": "conexion-pixel-cci", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"cci"},
+    {"dsn": "conexion-pixel-colon", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"colon"},
+    {"dsn": "conexion-pixel-jardin", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"jardin"},
+    {"dsn": "conexion-pixel-quicentro", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"quicentro"},
+    {"dsn": "conexion-pixel-riocentroquito", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com","local":"riocentroquito"},
 
     # #JEFE ZONAL KARLA AGUIRRE
-    # {"dsn": "conexion-pixel-mega", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"mega"},
-    # {"dsn": "conexion-pixel-portaldos", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"portaldos"},
-    # {"dsn": "conexion-pixel-portal", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"portal"},
-    # {"dsn": "conexion-pixel-scala", "uid": "DBA", "pwd":  "banana1","email":"kaguirre@latablitadeltartaro.com","local":"scala"},
-    # {"dsn": "conexion-pixel-republica", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"republica"},
+    {"dsn": "conexion-pixel-mega", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"mega"},
+    {"dsn": "conexion-pixel-portaldos", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"portaldos"},
+    {"dsn": "conexion-pixel-portal", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"portal"},
+    {"dsn": "conexion-pixel-scala", "uid": "DBA", "pwd":  "banana1","email":"kaguirre@latablitadeltartaro.com","local":"scala"},
+    {"dsn": "conexion-pixel-republica", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com","local":"republica"},
     
     # #JEFE ZONAL ENRIQUE MUÑOZ
-    # {"dsn": "conexion-pixel-floreana", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"floreana"},
-    # {"dsn": "conexion-pixel-granados", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"granados"},
-    # {"dsn": "conexion-pixel-ibarra", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"ibarra"},
-    # {"dsn": "conexion-pixel-laguna", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"laguna"},
-    # {"dsn": "conexion-pixel-prensa", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"prensa"},
-    # {"dsn": "conexion-pixel-wok-quicentro", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"wok-quicentro"},
+    {"dsn": "conexion-pixel-floreana", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"floreana"},
+    {"dsn": "conexion-pixel-granados", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"granados"},
+    {"dsn": "conexion-pixel-ibarra", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"ibarra"},
+    {"dsn": "conexion-pixel-laguna", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"laguna"},
+    {"dsn": "conexion-pixel-prensa", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"prensa"},
+    {"dsn": "conexion-pixel-wok-quicentro", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com","local":"wok-quicentro"},
     
     #JEFE ZONAL PABLO ROMERO
-    # {"dsn": "conexion-pixel-latacunga", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"latacunga"},
+    {"dsn": "conexion-pixel-latacunga", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"latacunga"},
     {"dsn": "conexion-pixel-ambato", "uid": "DBA", "pwd": "banana1","email":"emedranda@latablitadeltartaro.com","local":"ambato"},
-    # {"dsn": "conexion-pixel-riobamba", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"riobamba"},
-    # {"dsn": "conexion-pixel-santodomingo", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"santodomingo"},
-    # {"dsn": "conexion-pixel-bomboli", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"bomboli"},
+    {"dsn": "conexion-pixel-riobamba", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"riobamba"},
+    {"dsn": "conexion-pixel-santodomingo", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"santodomingo"},
+    {"dsn": "conexion-pixel-bomboli", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com","local":"bomboli"},
 
     # #JEFE ZONAL MICHELLE BENITEZ
-    # {"dsn": "conexion-pixel-nueveoctubre", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"nueveoctubre"},
-    # {"dsn": "conexion-pixel-sonesta", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"sonesta"},
-    # {"dsn": "conexion-pixel-dorado", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"dorado"},
-    # {"dsn": "conexion-pixel-machala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"machala"},
-    # {"dsn": "conexion-pixel-piazzamachala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"piazzamachala"},
-    # {"dsn": "conexion-pixel-urdesados", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"urdesados"},
-    # {"dsn": "conexion-pixel-centenario", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"centenario"},
+    {"dsn": "conexion-pixel-nueveoctubre", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"nueveoctubre"},
+    {"dsn": "conexion-pixel-sonesta", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"sonesta"},
+    {"dsn": "conexion-pixel-dorado", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"dorado"},
+    {"dsn": "conexion-pixel-machala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"machala"},
+    {"dsn": "conexion-pixel-piazzamachala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"piazzamachala"},
+    {"dsn": "conexion-pixel-urdesados", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"urdesados"},
+    {"dsn": "conexion-pixel-centenario", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com","local":"centenario"},
 
     # #JEFE ZONAL LENNY RODRIGUEZ
-    # {"dsn": "conexion-pixel-mallsur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local";"mallsur"},
-    # {"dsn": "conexion-pixel-riosur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local";"riosur"},
-    # {"dsn": "conexion-pixel-village", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local";"village"},
-    # {"dsn": "conexion-pixel-entrerios", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local";"entrerios"},
-    # {"dsn": "conexion-pixel-salinas", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local";"salinas"},
+    {"dsn": "conexion-pixel-mallsur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local":"mallsur"},
+    {"dsn": "conexion-pixel-riosur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local":"riosur"},
+    {"dsn": "conexion-pixel-village", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local":"village"},
+    {"dsn": "conexion-pixel-entrerios", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local":"entrerios"},
+    {"dsn": "conexion-pixel-salinas", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com","local":"salinas"},
     
     # #JEFE ZONAL BYAN ZAMORA
-    # {"dsn": "conexion-pixel-ceibos", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"ceibos"},
-    # {"dsn": "conexion-pixel-sanmarino", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"sanmarino"},
-    # {"dsn": "conexion-pixel-duran", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"duran"},
-    # {"dsn": "conexion-pixel-mallnorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"mallnorte"},
-    # {"dsn": "conexion-pixel-rionorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"rionorte"},
-    # {"dsn": "conexion-pixel-citymall", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"citymall"},
-    # {"dsn": "conexion-pixel-mallpacifico", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"mallpacifico"}
+    {"dsn": "conexion-pixel-ceibos", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"ceibos"},
+    {"dsn": "conexion-pixel-sanmarino", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"sanmarino"},
+    {"dsn": "conexion-pixel-duran", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"duran"},
+    {"dsn": "conexion-pixel-mallnorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"mallnorte"},
+    {"dsn": "conexion-pixel-rionorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"rionorte"},
+    {"dsn": "conexion-pixel-citymall", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"citymall"},
+    {"dsn": "conexion-pixel-mallpacifico", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com","local":"mallpacifico"}
 ]
 
 def execute_query_on_dsn(config):
@@ -83,7 +83,7 @@ def execute_query_on_dsn(config):
         EMPPOSITION,
         EmpLastName
         FROM DBA.employee
-        WHERE EMPPOSITION = 1008 AND ISACTIVE = 1 AND EMPNUM =2146435125; 
+        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1; 
         """
         connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
 
@@ -111,7 +111,7 @@ def change_password_cashier(newpass, idEmploye, config):
     try:
         sql_query = """ UPDATE DBA.employee
                         SET SWIPE = ?
-                        WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1008 """
+                        WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1005 """
 
         connection_string = (
             f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
