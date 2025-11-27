@@ -6,9 +6,70 @@ from email.mime.text import MIMEText  # Para mensajes de texto plano
 from email.mime.multipart import MIMEMultipart  # Para mensajes con HTML y/o adjuntos
 
 connection_strings = [
-    {"dsn": "conexion-pixel-ambato", "uid": "DBA", "pwd": "banana1","email":"rguaman@latablitadeltartaro.com"},
-    {"dsn": "conexion-pixel-colon", "uid": "DBA", "pwd": "banana1","email":"rguaman@latablitadeltartaro.com"},
-    {"dsn": "conexion-pixel-floreana", "uid": "DBA", "pwd": "banana1","email":"rguaman@latablitadeltartaro.com"}
+   
+    #JEFE ZONAL SILVANA CURAY   
+    {"dsn": "conexion-pixel-quisur", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-rpatio", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-recreotres", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-rplaza", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-sanluis", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-sanrafael", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-villaflora", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com"},
+    
+    #JEFE ZONAL JAVIER QUICHIMBO
+    {"dsn": "conexion-pixel-bosque", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-cci", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-colon", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-jardin", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-quicentro", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-riocentroquito", "uid": "DBA", "pwd": "banana1","email":"jquichimbo@latablitadeltartaro.com"},
+
+    #JEFE ZONAL KARLA AGUIRRE
+    {"dsn": "conexion-pixel-mega", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-portaldos", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-portal", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-scala", "uid": "DBA", "pwd":  "banana1","email":"kaguirre@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-republica", "uid": "DBA", "pwd": "banana1","email":"kaguirre@latablitadeltartaro.com"},
+    
+    #JEFE ZONAL ENRIQUE MUÑOZ
+    {"dsn": "conexion-pixel-floreana", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-granados", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-ibarra", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-laguna", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-prensa", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-wok-quicentro", "uid": "DBA", "pwd": "banana1","email":"emunioz@latablitadeltartaro.com"},
+    
+    #JEFE ZONAL PABLO ROMERO
+    {"dsn": "conexion-pixel-latacunga", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-ambato", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-riobamba", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-santodomingo", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-bomboli", "uid": "DBA", "pwd": "banana1","email":"promero@latablitadeltartaro.com"},
+       
+    #JEFE ZONAL MICHELLE BENITEZ
+    {"dsn": "conexion-pixel-nueveoctubre", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-sonesta", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-dorado", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-machala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-piazzamachala", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-urdesados", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-centenario", "uid": "DBA", "pwd": "banana1","email":"mbenitez@latablitadeltartaro.com"},
+
+    #JEFE ZONAL LENNY RODRIGUEZ
+    {"dsn": "conexion-pixel-mallsur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-riosur", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-village", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-entrerios", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-salinas", "uid": "DBA", "pwd": "banana1","email":"lrodriguez@latablitadeltartaro.com"},
+    
+    #JEFE ZONAL BYAN ZAMORA
+    {"dsn": "conexion-pixel-ceibos", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-sanmarino", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-duran", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-mallnorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-rionorte", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-citymall", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"},
+    {"dsn": "conexion-pixel-mallpacifico", "uid": "DBA", "pwd": "banana1","email":"bzamora@latablitadeltartaro.com"}
 ]
 
 def execute_query_on_dsn(config):
@@ -19,9 +80,10 @@ def execute_query_on_dsn(config):
         EMPNAME,
         ADRESS2,
         POSNAME,
-        EMPPOSITION
-        FROM employee
-        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1
+        EMPPOSITION,
+        EmpLastName
+        FROM DBA.employee
+        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1 AND EMPNUM =2146435125;
         """
         connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
 
@@ -45,32 +107,39 @@ def execute_query_on_dsn(config):
         }
 
 
-def change_password_cashier(newpass,idEmploye,config):
+def change_password_cashier(newpass, idEmploye, config):
     try:
-
-        sql_query = """ UPDATE employee
+        sql_query = """ UPDATE DBA.employee
                        SET SWIPE = ?
                        WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1005 """
-        connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
+
+        connection_string = (
+            f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
+        )
 
         with pyodbc.connect(connection_string) as conn:
             with closing(conn.cursor()) as cursor:
-                cursor.execute(sql_query,(newpass,idEmploye))
-                # columns = [column[0] for column in cursor.description]
-                rows = cursor.fetchall()
+                cursor.execute(sql_query, (newpass, idEmploye))
+
+                #AQUI va el commit PARA ASEGURAR ACTUALIZACIÓN
+
+                # rowcount = cuántas filas se actualizaron
+                filas_afectadas = cursor.rowcount
+
+                conn.commit()
                 return {
-                    "dsn": config['dsn'],
-                    "columns": [],
-                    "data": rows,
-                    "error": None
+                    "dsn": config["dsn"],
+                    "rows_affected": filas_afectadas,
+                    "error": None,
                 }
+
     except pyodbc.Error as e:
         return {
-            "dsn": config['dsn'],
-            "columns": [],
-            "data": [],
-            "error": str(e)
+            "dsn": config["dsn"],
+            "rows_affected": 0,
+            "error": str(e),
         }
+
 
 def sendCorreo():
     smtp_server = "smtp.office365.com"
@@ -116,13 +185,14 @@ def sendCorreo():
                     empleado_info = {
                         'EMPNUM': empleado[0],
                         'EMPNAME': empleado[1],
+                        'EmpLastName': empleado[5], #SE INGRESALA COLUMNA DEL APELLIDO
                         'ADRESS2': empleado[2],
                         'POSNAME': empleado[3],
                         'newPass': newPass
                     }
                     empleados_info.append(empleado_info)
-                    print(f"Administrador: {empleado[1]}, Nueva Clave: {newPass}")
-                    change_password_cashier(newPass,empleado[0],config);
+                    print(f"Administrador: {empleado[1], empleado[5]}, Nueva Clave: {newPass}") #SE INGRESA NOMBRE Y APELLIDO
+                    change_password_cashier(newPass,empleado[0],config)
 
                 
                 # Agregar información al cuerpo del correo
@@ -132,7 +202,7 @@ def sendCorreo():
                 if empleados_info:
                     tiene_datos = True
                     for emp in empleados_info:
-                        cuerpo_total += f"Nombre: {emp['EMPNAME']}\n"
+                        cuerpo_total += f"Nombre completo: {emp['EMPNAME']+" "+emp['EmpLastName']}\n"
                         cuerpo_total += f"Cedula: {emp['ADRESS2']}\n"
                         cuerpo_total += f"Nueva contraseña: {emp['newPass']}\n"
                         cuerpo_total += "-" * 50 + "\n"
@@ -167,4 +237,3 @@ def sendCorreo():
 
 
 sendCorreo();
-
