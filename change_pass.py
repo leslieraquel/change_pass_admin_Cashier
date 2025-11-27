@@ -83,7 +83,7 @@ def execute_query_on_dsn(config):
         EMPPOSITION,
         EmpLastName
         FROM DBA.employee
-        WHERE EMPPOSITION = 1008 AND ISACTIVE = 1 AND EMPNUM =2146435125; 
+        WHERE EMPPOSITION = 1005 AND ISACTIVE = 1; 
         """
         connection_string = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
 
@@ -111,7 +111,7 @@ def change_password_cashier(newpass, idEmploye, config):
     try:
         sql_query = """ UPDATE DBA.employee
                         SET SWIPE = ?
-                        WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1008 """
+                        WHERE ISACTIVE = 1 AND EMPNUM = ? AND EMPPOSITION = 1005 """
 
         connection_string = (
             f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
