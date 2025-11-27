@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart  # Para mensajes con HTML y/o adj
 connection_strings = [
 
     #JEFE ZONAL SILVANA CURAY   
-    {"dsn": "conexion-pixel-quisur", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"quisur"},
+    # {"dsn": "conexion-pixel-quisur", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"quisur"},
     {"dsn": "conexion-pixel-rpatio", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rpatio"},
     {"dsn": "conexion-pixel-recreotres", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"recreotres"},
     {"dsn": "conexion-pixel-rplaza", "uid": "DBA", "pwd": "banana1","email":"scuray@latablitadeltartaro.com","local":"rplaza"},
