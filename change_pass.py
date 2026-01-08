@@ -4,6 +4,7 @@ import random
 import smtplib  # Para enviar el correo mediante SMTP
 from email.mime.text import MIMEText  # Para mensajes de texto plano
 from email.mime.multipart import MIMEMultipart  # Para mensajes con HTML y/o adjuntos
+import time
 
 connection_strings = [
 
@@ -122,10 +123,8 @@ def change_password_cashier(newpass, idEmploye, config):
                 cursor.execute(sql_query, (newpass, idEmploye))
 
                 #AQUI va el commit PARA ASEGURAR ACTUALIZACIÓN
-
                 # rowcount = cuántas filas se actualizaron
                 filas_afectadas = cursor.rowcount
-
                 conn.commit()
                 return {
                     "dsn": config["dsn"],
@@ -235,5 +234,39 @@ def sendCorreo():
         else:
             print(f"No hay contenido para enviar a {email}")
 
+#EMPIEZA A VALIDAR LAS CONEXIONES PARA PROCEDER CON EL CAMBIO
+def validar_todas_las_conexiones(connection_strings):
+    errores = []
 
-sendCorreo();
+    for config in connection_strings:
+        try:
+            cs = f"DSN={config['dsn']};UID={config['uid']};PWD={config['pwd']}"
+            with pyodbc.connect(cs, timeout=5):
+                pass
+        except pyodbc.Error as e:
+            errores.append((config['dsn'], str(e)))
+
+    return errores
+
+def main():
+    while True:
+        print(" Verificando conexiones a todas las bases...")
+
+        errores_conexion = validar_todas_las_conexiones(connection_strings)
+
+        if not errores_conexion:
+            print("Todas las conexiones OK")
+            break   # SALE DEL BUCLE → se puede ejecutar el programa
+        else:
+            print(" Algunas conexiones fallaron. NO se ejecuta nada.")
+            for dsn, error in errores_conexion:
+                print(f" - {dsn}: {error}")
+
+            print("Reintentando en 10 segundos...\n")
+            time.sleep(10)
+
+    # SOLO SE LLEGA AQUÍ SI TODAS LAS CONEXIONES ESTÁN OK
+    sendCorreo()
+
+if __name__ == "__main__":
+    main()
